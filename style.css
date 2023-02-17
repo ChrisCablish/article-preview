@@ -1,0 +1,39 @@
+:root {
+    --veryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --desaturatedDarkBlue: hsl(214, 17%, 51%);
+    --grayishBlue: hsl(212, 23%, 69%);
+    --lightGrayishBlue: hsl(210, 46%, 95%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--lightGrayishBlue);
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    background-color: white;
+    width: 90%;
+    margin: 3rem 0;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.img__wrapper {
+    height: 35%;
+    width: 100%;
+    background-color: var(--desaturatedDarkBlue);
+}
+
+img.avatar {
+    height: 3rem;
+    width: auto;
+    border-radius: 50%;
+}
