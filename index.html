@@ -8,12 +8,14 @@
   
   <title>Frontend Mentor | Article preview component</title>
   <link href="style.css" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <main>
     <div class="img__wrapper">
-      <!-- <img src="images/drawers.jpg" alt="drawers"> -->
+      <img src="images/drawers.jpg" alt="drawers" class="drawers">
     </div>
     <div class="text__wrapper">
       <div class="content">
@@ -24,9 +26,13 @@
           to help you make any room feel complete.</p>
       </div>
       <div class="social">
-        <img src="images/avatar-michelle.jpg" alt="Michelle" class="avatar">
-        <span>Michelle Appleton</span>
-        <span>28 Jun 2020</span>
+        <div class="michelle">
+          <img src="images/avatar-michelle.jpg" alt="Michelle" class="avatar">
+          <div class="name__and__date">
+            <p class="name">Michelle Appleton</p>
+            <p class="date">28 Jun 2020</p>
+          </div>
+        </div>
         <img src="images/icon-share.svg" alt="Share Button" class="share">
       </div>
     </div>

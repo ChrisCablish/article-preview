@@ -9,31 +9,135 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Manrope', sans-serif;
 }
 
+/* -------------MOBILE DESIGN--------------- */
 body {
+    display: flex;
     min-height: 100vh;
     background-color: var(--lightGrayishBlue);
-    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
 main {
-    background-color: white;
-    width: 90%;
-    margin: 3rem 0;
-    border-radius: 1rem;
-    overflow: hidden;
+  background-color: white;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.text__wrapper {
+  padding: 2rem;
+}
+
+.text__wrapper h1 {
+  font-size: 1.3rem;
+}
+
+.text__wrapper p {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+
+.img__wrapper img {
+  height: 17rem;
+  position: relative;
+  align-self: center;
 }
 
 .img__wrapper {
-    height: 35%;
-    width: 100%;
-    background-color: var(--desaturatedDarkBlue);
+  overflow: hidden;
+  height: 14rem;
 }
 
-img.avatar {
-    height: 3rem;
-    width: auto;
-    border-radius: 50%;
+.avatar {
+  height: 2rem;
+  width: auto;
+  border-radius: 50%;
 }
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.name__and__date {
+  font-size: 0.8rem;
+}
+
+.text__wrapper p {
+  margin-top: 1rem;
+}
+
+.text__wrapper .social p {
+  margin-top: 0;
+}
+
+.michelle {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+
+
+
+/* -----------DESKTOP DESIGN-------------- */
+
+@media all and (min-width: 500px) {
+
+    main {
+      background-color: white;
+      display: flex;
+      flex-direction: row;
+      width: 60%;
+    }
+
+    .text__wrapper {
+      /* flex: content; */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .img__wrapper img {
+      height: 20rem;
+      /* width: auto; */
+    }
+
+    .avatar {
+      height: 2rem;
+      width: auto;
+    }
+
+    .img__wrapper {
+      /* overflow: visible; */
+      /* flex: 1; */
+      height: 20rem;
+      width: 80%;
+      /* flex: content; */
+    }
+
+    .name__and__date {
+      right: 4.2rem;
+    }
+
+
+
+   
+
+
+
+
+
+}
+
+
+
+
