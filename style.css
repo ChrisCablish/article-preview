@@ -36,11 +36,28 @@ main {
 
 .text__wrapper h1 {
   font-size: 1.3rem;
+  color: var(--veryDarkGrayishBlue);
 }
 
-.text__wrapper p {
+.text__wrapper .content p {
   font-size: 0.8rem;
   line-height: 1.5rem;
+  color: var(--desaturatedDarkBlue);
+}
+
+.name {
+  color: var(--veryDarkGrayishBlue);
+  font-weight: 700;
+}
+
+.share {
+  background-color: var(--lightGrayishBlue);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.date {
+  color: var(--desaturatedDarkBlue);
 }
 
 .img__wrapper img {
