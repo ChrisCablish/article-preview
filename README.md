@@ -6,11 +6,8 @@ Users should be able to:
 - View the optimal layout for the component depending on their device's screen size
 - See the social media share links when they click the share icon
 
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-## My process
+Solution URL: https://github.com/ChrisCablish/article-preview
+Live Site URL: https://chriscablish.github.io/article-preview/
 
 ### Built with
 
