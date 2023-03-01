@@ -18,6 +18,13 @@ html {
   padding: 0;
 }
 
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 body {
   box-sizing: border-box;
   font-family: var(--body-font);
@@ -28,15 +35,15 @@ body {
 .article-container {
   position: relative;
   width: 80%;
-  margin: 0 auto;
-  margin-top: 4rem;
+  /* margin: 0 auto; */
+  /* margin-top: 4rem; */
   display: grid;
   grid-template-columns: 1fr;
   background-color: var(--white);
   border-radius: 15px;
-  box-shadow: -1px 1px 25px 0px rgba(0, 0, 0, 0.17);
-  -webkit-box-shadow: -1px 1px 25px 0px rgba(0, 0, 0, 0.17);
+  /* -webkit-box-shadow: -1px 1px 25px 0px rgba(0, 0, 0, 0.17);
   -moz-box-shadow: -1px 1px 25px 0px rgba(0, 0, 0, 0.17);
+  box-shadow: -1px 1px 25px 0px rgba(0, 0, 0, 0.17); */
 }
 
 /* Info Container */
@@ -177,8 +184,75 @@ body {
   letter-spacing: 3px;
 }
 
+@media screen and (min-width: 600px) {
+  .article-container {
+    width: 40%;
+    /* gap: 1.8rem; */
+  }
+}
 
- 
+@media screen and (min-width: 1025px) {
+  .article-container {
+    /* position: initial; */
+    width: 50%;
+    /* margin-top: 20rem; */
+    grid-template-columns: 21.5rem 1fr;
+    /* justify-content: space-evenly; */
+  }
+
+  .info-container {
+    /* position: relative; */
+    /* text-align: left; */
+    /* margin: 1rem 0; */
+  }
+
+  .article-img {
+    height: 100%;
+    background-position: left;
+    border-radius: 15px 0 0 15px;
+  }
+
+  .author-section {
+    justify-content: space-between;
+  }
+
+  .share-section.shown {
+    display: flex;
+    position: absolute;
+    transform: translate(20%, -200%);
+    gap: 0.9rem;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0.2rem;
+    width: 50%;
+    min-height: 10%;
+    box-shadow: -1px 1px 25px 0px rgba(0, 0, 0, 0.17);
+    -webkit-box-shadow: -1px 1px 25px 0px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: -1px 1px 25px 0px rgba(0, 0, 0, 0.17);
+  }
+
+  .hidden-share-btn {
+    display: none;
+  }
+
+  .share-section.shown::after {
+    position: absolute;
+    content: "";
+    background-color: transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 0;
+    border-left: 30px solid transparent;
+    border-top: 30px solid var(--very-dark-grayish-blue);
+    transform: translate(56%, 40%);
+    z-index: -1;
+  }
+
+
+
+}
+
+
+
 
   
   
